@@ -1,0 +1,8 @@
+Origin: hi i am translucency
+Label: Translucency Repo
+Suite: stable
+Version: 1.0
+Codename: Translucency
+Architectures: iphoneos-arm
+Components: main
+Description: Translucency: The Repo

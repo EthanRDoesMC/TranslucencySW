@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Translucency takes your background and blurs it, and then sets it as the background for apps. (Cydia is currently supported.)</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>tk.ethanrdoesmc.translucencyprefs</string>
+			<key>key</key>
+			<string>active</string>
+			<key>label</key>
+			<string>Enable Tweak</string>
+		</dict>
+		<dict>	
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Try different Eclipse/Noctis settings. This tweak is not complete, by any means. Starting from the ground up is hard.</string>
+		</dict>
+		</array>
+	<key>title</key>
+	<string>Translucency</string>
+</dict>
+</plist>
