@@ -91,12 +91,13 @@ static NSString *homeiPad = @"cydia.saurik.com/ui/ios~ipad/1.1/home";
 }
 %end
 
-%hook UIView
+%hook UIWindow
 - (void) _didScroll {
     %orig;
     if ([allui boolValue] == YES)
 			{
         [[UIApplication sharedApplication] _setBackgroundStyle:3];
+		[[UIApplication sharedApplication] _setApplicationBackdropStyle:3];
         [UIView animateWithDuration:0.3
                               delay:0.6
                             options:0
@@ -126,7 +127,7 @@ static NSString *homeiPad = @"cydia.saurik.com/ui/ios~ipad/1.1/home";
 
 %hook UIScrollView
 - (void)setBackgroundColor:(UIColor *)color {
-    for (UIView *view in self.subviews) {
+    for (UIWindow *view in self.subviews) {
         if ([allui boolValue] == YES)
 			{
             %orig([UIColor clearColor]);
