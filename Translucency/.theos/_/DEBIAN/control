@@ -1,10 +1,10 @@
 Package: tk.ethanrdoesmc.translucencysw
-Name: Translucency SW
+Name: TranslucencySW
 Depends: mobilesubstrate
 Architecture: iphoneos-arm
 Description: Make as much as possible translucent!
 Maintainer: EthanRDoesMC <ethanrdoesmc@gmail.com>
 Author: EthanRDoesMC <ethanrdoesmc@gmail.com>
 Section: Tweaks
-Version: 2.0-5
+Version: 2-1
 Installed-Size: 338
