@@ -8,7 +8,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Translucency takes your background and blurs it, and then sets it as the background for apps. (Cydia is currently supported.)</string>
+			<string>Translucency takes your background and blurs it, and then sets it as the background for apps. (Welcome to Beta Testing!)</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -20,13 +20,13 @@
 			<key>key</key>
 			<string>active</string>
 			<key>label</key>
-			<string>Enable Everywhere</string>
+			<string>Enable For All UIWebViews</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Or, you can enable selectively.</string>
+			<string>Or, you can enable selectively. (Cydia Only)</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -68,7 +68,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Wanna try a beta feature? It's called, "MAKE EVERYTHING TRANSLUCENT!"</string>
+			<string>Beta Features</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -80,19 +80,21 @@
 			<key>key</key>
 			<string>beta</string>
 			<key>label</key>
-			<string>Enable for all UIViews</string>
+			<string>Enable for all UIWindows</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>A respring is required for changes to take effect. (Deactivated until SystemWide Translucency)</string>
+			<string>A respring is required for changes to take effect.</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSButtonCell</string>
 			<key>label</key>
 			<string>Respring</string>
+			<key>action</key>
+			<string>respring</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -104,7 +106,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Version 1.1 (Cydia Only)</string>
+			<string>Version 2 Beta</string>
 		</dict>
 	</array>
 	<key>title</key>

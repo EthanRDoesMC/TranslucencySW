@@ -31,6 +31,8 @@ static NSString *homeiPad = @"cydia.saurik.com/ui/ios~ipad/1.1/home";
 - (void)_setBackgroundStyle:(long long)style;
 @end
 
+
+
 %hook UIWebBrowserView
 - (void)loadRequest:(NSURLRequest *)request {
     %orig;
@@ -97,7 +99,7 @@ static NSString *homeiPad = @"cydia.saurik.com/ui/ios~ipad/1.1/home";
     if ([allui boolValue] == YES)
 			{
         [[UIApplication sharedApplication] _setBackgroundStyle:3];
-		[[UIApplication sharedApplication] _setApplicationBackdropStyle:3];
+		[[UIApplication sharedApplication] setApplicationBackdropStyle:3];
         [UIView animateWithDuration:0.3
                               delay:0.6
                             options:0
@@ -127,13 +129,20 @@ static NSString *homeiPad = @"cydia.saurik.com/ui/ios~ipad/1.1/home";
 
 %hook UIScrollView
 - (void)setBackgroundColor:(UIColor *)color {
-    for (UIWindow *view in self.subviews) {
         if ([allui boolValue] == YES)
 			{
-            %orig([UIColor clearColor]);
+            [UIColor clearColor];
             return;
         }
 		}
-    %orig;
-}
+%end
+
+%hook UIWindow
+- (void)setBackgroundColor:(UIColor *)color {
+        if ([allui boolValue] == YES)
+			{
+            [UIColor clearColor];
+            return;
+        }
+		}
 %end
